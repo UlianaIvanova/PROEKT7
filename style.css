@@ -1,13 +1,16 @@
 /* На платформе Хекслета пройдите урок "Блочная модель CSS" в "Основы вёрстки контента" */
-*, *::before, *::after{
+@font-face {
+        font-family:Neucha-Regular;
+        src: url("Neucha-2/Neucha-Regular.ttf");
+    };
+   *, *::before, *::after{
     box-sizing: border-box;
-    font-family: Gotham Pounded;
-}
+ }
 body {
     background-image: url('telegram-cloud-photo-size-2-5384361089384441307-w.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-
+    font-family: "Neucha-Regular","Arial",sans-serif;
 
     padding: 0;
     margin: 0;
@@ -20,6 +23,7 @@ body {
 .text{
 position: absolute;
 color: #fff;
+font-size: 25px;
 
 
 }
@@ -53,14 +57,14 @@ color: #fff;
 .btn{
     background-color: hsl(24, 100%, 26%);
     border: 1px solid hsl(24, 100%, 11%);
-    border-radius: 500px;
+    border-radius: 20px;
     padding: 30px 100px ;
     color: white;
     outline: none;
     position: relative;
-    box-sizing: border-box;
-    transition: all 500ms ease;
-    font-size: 20px;
+   font-size: 20px;
+   font-family: "Neucha-Regular","Arial",sans-serif;
+ 
 }
 
 button {
@@ -75,7 +79,7 @@ button {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
-    margin-left: 12px;
+    
 }
 
 button:before {
@@ -88,7 +92,7 @@ button:before {
     background-image: url('56-1427580905.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-	border-radius: 50px;
+	border-radius: 20px;
 	transition: all 0.7s ease;
     
 }
@@ -97,6 +101,6 @@ button:hover {
     transform: translateY(-2px);
 }
 button:hover:before {
-	height: 85px;
+	height: 100%;
    
 }
