@@ -1,0 +1,102 @@
+/* На платформе Хекслета пройдите урок "Блочная модель CSS" в "Основы вёрстки контента" */
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: Gotham Pounded;
+}
+body {
+    background-image: url('telegram-cloud-photo-size-2-5384361089384441307-w.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.text{
+position: absolute;
+color: #fff;
+
+
+}
+.container {
+    width: 600px;
+    height: 400px;
+    max-width: 80%;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 2px;
+    background-image: url('2024-06-06 14.04.49.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.btn-grit {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap:10px;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 5px;
+    margin-bottom:20px;
+    
+  
+}
+
+.btn{
+    background-color: hsl(24, 100%, 26%);
+    border: 1px solid hsl(24, 100%, 11%);
+    border-radius: 500px;
+    padding: 30px 100px ;
+    color: white;
+    outline: none;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 500ms ease;
+    font-size: 20px;
+}
+
+button {
+    display: inline-block;
+   
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(to right, #761010, #000000);
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    margin-left: 12px;
+}
+
+button:before {
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+    background-image: url('56-1427580905.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+	border-radius: 50px;
+	transition: all 0.7s ease;
+    
+}
+button:hover {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    transform: translateY(-2px);
+}
+button:hover:before {
+	height: 85px;
+   
+}
